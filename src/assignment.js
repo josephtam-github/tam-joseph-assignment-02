@@ -33,7 +33,13 @@ function sumOfNumbers(arrayOfNumbers) {
  * @returns number the count of even numbers
  */
 function countEvenNumbers(arrayOfNumbers) {
-    return arrayOfNumbers.length;
+  var  total = 0;
+    for (let index = 0; index < arrayOfNumber.length; index++) {
+      if (index % 2 === 0) {
+        total += 1;
+      }
+    }
+     return total;
 }
 
 
@@ -52,9 +58,13 @@ function countEvenNumbers(arrayOfNumbers) {
  * @returns Array the converted temperatures in Fahrenheit
  */
 function celsiusToFahrenheit(arrayOfNumbers) {
-    return arrayOfNumbers;
+    const newArray = [];
+    for (let index = 0; index < arrayOfNumber.length; index++) {
+      const farenheit = (index * (9/5)) + 32;
+      newArray.push(farenheit);
+    }
+    return newArray;
 }
-// assignment.celsiusToFahrenheit = celsiusToFahrenheit;
 
 
 // ========================
