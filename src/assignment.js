@@ -34,8 +34,8 @@ assignment.sumOfNumbers = sumOfNumbers;
  */
 function countEvenNumbers(arrayOfNumbers) {
   var total = 0;
-  for (let index = 0; index < arrayOfNumbers.length; index++) {
-    if (index % 2 === 0) {
+  for (let index = 0; index <= arrayOfNumbers.length; index++) {
+    if (arrayOfNumbers[index] % 2 == 0) {
       total += 1;
     }
   }
@@ -60,7 +60,7 @@ assignment.countEvenNumbers = countEvenNumbers;
 function celsiusToFahrenheit(arrayOfNumbers) {
   const newArray = [];
   for (let index = 0; index < arrayOfNumbers.length; index++) {
-    const farenheit = (index * (9 / 5)) + 32;
+    const farenheit = Math.trunc((arrayOfNumbers[index] * 1.8) + 32);
     newArray.push(farenheit);
   }
   return newArray;
